@@ -1,0 +1,30 @@
+@import "colors";
+footer {
+    background-color: $dark-background;
+}
+ .grid-container {
+
+    background-color: $darker-background;
+ }
+  p {
+       color: $primary-color;
+  }
+h1 {
+    color: $secondary-color;
+}
+@import "typography";
+p, footer {
+    font: $primary-font;
+}
+h1 {
+    font: $heading;
+}
+b {
+    font: $title;
+}
+@import "mixins";
+aside {
+    border: 1px solid orange;
+    @include border-radius();
+}
+@import "./vendor/normalize.scss"

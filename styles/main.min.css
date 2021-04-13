@@ -1,6 +1,25 @@
 @charset "utf-8";
 /* CSS Document */
 
+@media (max-width: 768px) {
+	body {
+		max-width: 100%;
+	}
+	.grid-container > div, div2 {
+		width: 300px;
+	}
+	figure2 > img {
+		width: 235px;
+		display: flex;
+		flex: right;
+	}
+	footer {
+		padding-bottom: 10px;
+	}
+	footer > div, div2 {
+		width: 100px;
+	}
+}
 .grid-container{
 	position: absolute;
 	top: 0px;
@@ -51,7 +70,6 @@ h1{
 	color: goldenrod;
 	font-size: 37px;
 	line-height: 0.3;
-	font-family: banana,sans-serif;
 	font-weight: 400;
 	font-style: oblique;
 }
@@ -102,11 +120,12 @@ footer{
 	display: grid;
 	grid-template-columns: auto auto;
 	grid-template-rows: auto auto;
-	grid-gap: 500px;
+	grid-gap: 300px;
 	
 }
 footer > div {
 	color: white;
+	width: 50%;
 	font-size: 10px;
 	font-family: co-text,sans-serif;
 	padding: 10px;
@@ -115,6 +134,7 @@ footer > div {
 }
 footer >div2 {
 	color: white;
+	width: 50%;
 	font-size: 10px;
 	font-family: co-text,sans-serif;
 	padding: 10px;
